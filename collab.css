@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+
+@font-face {
+  font-family: 'MoneaAlegante-Regular';
+  font-style: normal;
+  src: url(font/MoneaAlegante-Regular.eot ),
+    url(font/MoneaAlegante-Regular.woff2 ) format('woff2'),
+    url(font/MoneaAlegante-Regular.woff ) format('woff'),
+    url(font/MoneaAlegante-Regular.ttf ) format('truetype');
+}
+
+@font-face {
+  font-family: 'NotoSansKR-Regular';
+  font-style: normal;
+  src: url(font_notosans/NotoSansKR-Regular-Alphabetic.eot ),
+    url(font_notosans/NotoSansKR-Regular-Alphabetic.woff2 ) format('woff2'),
+    url(font_notosans/NotoSansKR-Regular-Alphabetic.woff ) format('woff'),
+    url(font_notosans/NotoSansKR-Regular-Alphabetic.ttf ) format('truetype');
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+body {
+  font-family: "MoneaAlegante-Regular";
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  overflow-x: hidden;
+  min-width: 1400px;
+}
+
+
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.arbe_main {
+  background-color: #000;
+  text-align: center;
+  height: 35px;
+  position: relative;
+}
+
+.swiper-wrapper {
+  padding-top: 10px;
+}
+
+#header {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 150px;
+  background-color: #ffff;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  margin-left: -50px;
+  z-index: 10;
+}
+
+.header_inner {
+  width: 1320px;
+  margin: auto;
+  position: relative;
+}
+
+.header_inner ul li:hover {
+  color: rgb(100, 100, 100);
+}
+
+.list1 {
+  position: absolute;
+  right: 50px;
+  margin: 0 auto;
+  top: 30px;
+}
+
+.list1 li {
+  float: left;
+  padding-right: 30px;
+}
+
+.search1 {
+  border: none;
+  outline-style: none;
+  border-bottom: 1px solid #ccc;
+  width: 200px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.search1::placeholder {
+  color: rgb(199, 199, 199);
+}
+
+#gnb1,
+#gnb2 {
+  clear: both;
+}
+
+#gnb1>li {
+  float: left;
+  padding: 10px 0;
+  width: 250px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#gnb2>li {
+  float: left;
+  padding: 10px 0;
+  width: 250px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#gnb1>li #gnb2>li {
+  position: relative;
+}
+
+#gnb1 {
+  position: absolute;
+  top: 80px;
+  padding-left: 20px;
+}
+
+#gnb1 a {
+  font-size: 25px;
+}
+
+#gnb2 {
+  position: absolute;
+  top: 80px;
+  right: 40px;
+}
+
+#gnb2 a {
+  font-size: 25px;
+}
+
+.font_40 {
+  font-size: 40px;
+}
+
+.font_20 {
+  font-size: 20px;
+}
+
+
+#main_banner {
+  position: relative;
+}
+
+.main_img {
+  width: 100%;
+  display: block;
+}
+
+#bg {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 2613px;
+  background-image: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.title {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+  color: #ffff;
+
+}
+
+#tarot_case {
+  position: relative;
+  width: 1100px;
+  height: 1350px;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+
+}
+
+.tarot1 {
+  float: left;
+}
+
+.text_box1 {
+  float: right;
+  text-align: center;
+  line-height: 35px;
+  color: #ffff;
+  padding-top: 100px;
+}
+
+.tarot_text1 {
+  font-size: 45px;
+}
+
+.tarot_text2 {
+  font-family: "NotoSansKR-Regular";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#tarot2 {
+  position: relative;
+  top: 800px;
+}
+
+.tarot_card2 {
+  position: absolute;
+  bottom: 280px;
+  right: 50px;
+
+}
+
+.tarot_text3 {
+  position: absolute;
+  top: 1287px;
+  /* width: 1300px; */
+  text-align: left;
+  color: #ffff;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 5px;
+}
+
+/*loop_logo*/
+
+.loop_logo {
+  position: absolute;
+  top: 852px;
+  right: 24px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loop_logo {
+  animation: rotate 10s linear infinite;
+}
+
+/*pooter*/
+#pooter {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  top: 210px;
+}
+
+.pooter_forest {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.pooter_bg {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  top: 230px;
+  height: 300px;
+  background-color: #000;
+}
+
+.pooter_text {
+  padding-top: 30px;
+  width: 1320px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #ffff;
+}
